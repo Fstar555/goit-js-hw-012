@@ -49,6 +49,6 @@ function imagesTemplate(arr) {
 
 export function createMarkUp(arr) {
   const markup = imagesTemplate(arr);
-  galleryEl.insertAdjacentElementHTML('beforeend', markup);
+  galleryEl.insertAdjacentHTML('beforeend', markup);
   lightbox.refresh();
 }
