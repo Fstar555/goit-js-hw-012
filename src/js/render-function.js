@@ -43,9 +43,12 @@ function imageTemplate(obj) {
 </li>
 `;
 }
+function imagesTemplate(arr) {
+  return arr.map(imageTemplate).join('');
+}
 
 export function createMarkUp(arr) {
-  const markup = imageTemplate(arr);
+  const markup = imagesTemplate(arr);
   galleryEl.insertAdjacentElement('beforeend', markup);
   lightbox.refresh();
 }
